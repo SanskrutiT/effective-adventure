@@ -1,0 +1,46 @@
+<html>
+<title>Registration Form</title>
+<style>
+body{
+background:linear-gradient(to right, rgb(97, 204, 236), rgb(212, 14, 238));
+
+}
+h1{
+    text-align: center;
+    background: linear-gradient(to left, rgb(97, 204, 236), rgb(212, 14, 238));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+<body>
+
+    <h1>Registration Form</h1>
+<form>
+<label for="fname">First Name:</label><br>
+<input type="text" id="fname" name="fname"><br>
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname" name="lname"><br>
+<label for="email">Enter your email:</label><br>
+<input type="email" id="email" name="email"><br>
+<label for="quantity">Phone Number:</label><br>
+<input type="number" id="quantity" name="quantity" min="00000000000" max="9999999999"><br>
+<p>GENDER</p>
+<input type="radio" id="Male" name="Gender" value="Male">
+<label for="Male">Male</label><br>
+<input type="radio" id="Male" name="Gender" value="Female">
+<label for="Female">Female</label><br><br>
+<input type="checkbox" id="hobby1" name="hobby1" value="Gaming">
+<label for="hobby1"> I like Gaming</label><br>
+<input type="checkbox" id="hobby2" name="hobby2" value="Driving">
+<label for="hobby2"> I like driving</label><br>
+<input type="checkbox" id="hobby3" name="hobby3" value="Singing">
+<label for="hobby3"> I like Singing</label><br>
+<p>Programming Language:</p>            
+<select name="PROGRAMMING LANGUAGE" id="PROGRAMMING LANGUAGE">    <option value="python">python</option>
+<option value="html">Html</option>
+<option value="mercedes">CSS</option>
+<option value="audi">JAVA</option>
+</select><br><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

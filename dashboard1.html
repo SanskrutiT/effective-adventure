@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    /* CSS styles for the dashboard */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    /* CSS styles for the sidebar navigation */
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      padding: 10px;
+      background-color: #e0e0e0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #ccc;
+    }
+
+    /* Additional styles */
+
+    .user-info {
+      margin-bottom: 20px;
+    }
+
+    .user-info .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .user-info .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .notifications {
+      margin-top: 20px;
+    }
+
+    .notifications .notification {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="path/to/your/logo.png" alt="Logo">
+        <h2>Your Dashboard</h2>
+      </div>
+      <div class="user-info">
+        <img class="avatar" src="path/to/avatar.png" alt="User Avatar">
+        <h3 class="name">Sanskruti Thakur</h3>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+      <div class="notifications">
+        <div class="notification">
+          <h4>New Message</h4>
+          <p>You have received a new message.</p>
+        </div>
+        <div class="notification">
+          <h4>Task Reminder</h4>
+          <p>Complete the task by the end of the day.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Welcome to the Dashboard!</h1>
+      <p>This is the content area of the dashboard page.</p>
+    </div>
+  </div>
+</body>
+</html>
