@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selenophile Art Studio Dashboard</title>
+  <style>
+    /* CSS styles for the dashboard */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      background-image: url("https://i.pinimg.com/564x/a1/0a/a2/a10aa2cc3b983c8716233655f16db2a9.jpg");
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    /* CSS styles for the sidebar navigation */
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      padding: 10px;
+      background-color: #e0e0e0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #ccc;
+    }
+
+    /* Additional styles */
+
+    .user-info {
+      margin-bottom: 20px;
+    }
+
+    .user-info .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .user-info .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .notifications {
+      margin-top: 20px;
+    }
+
+    .notifications .notification {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Dropdown styles */
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Additional features */
+
+    .sidebar .dropdown a {
+      position: relative;
+    }
+
+    .sidebar .dropdown .dropdown-content {
+      top: 0;
+      left: 100%;
+      margin-top: -10px;
+    }
+
+    .sidebar .dropdown .dropdown-content a {
+      width: 100%;
+    }
+
+    .sidebar .dropdown .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .sidebar .badge {
+      background-color: red;
+      color: #fff;
+      border-radius: 50%;
+      padding: 4px;
+      font-size: 12px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="https://s3-us-east-2.amazonaws.com/designevo/projects/uid-3736377/10c2920bfbcf2433806de30869ec6484/preview.png?t=1689350392685" alt="Selenophile Art Studio Logo">
+        <h2>Selenophile Art Studio</h2>
+      </div>
+      <div class="user-info">
+        <img class="avatar" src="https://i.pinimg.com/564x/4a/95/ad/4a95ad22a7532ea215aaf3557d678d50.jpg" alt="Artist Avatar">
+        <h3 class="name">Sanskruti Thakur</h3>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Gallery</a>
+          <div class="dropdown-content">
+            <a href="#">Paintings</a>
+            <a href="#">Sculptures</a>
+            <a href="#">Photography</a>
+          </div>
+        </li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+      <div class="notifications">
+        <div class="notification">
+          <h4>New Message</h4>
+          <p>You have received a new message.</p>
+        </div>
+        <div class="notification">
+          <h4>New Order</h4>
+          <p>You have a new order to process.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Welcome to the Art Studio Dashboard!</h1>
+      <p>This is the content area of the art studio dashboard page.</p>
+
+      <!-- Your content goes here -->
+      <div>
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>Art Exhibition - July 20, 2023</li>
+          <li>Workshop: Watercolor Techniques - July 25, 2023</li>
+          <li>Artist Talk - August 2, 2023</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>New Artworks</h2>
+        <p>Check out our latest artworks:</p>
+        <ul>
+          <li>Painting - "Sunset Serenade"</li>
+          <li>Sculpture - "Eternal Grace"</li>
+          <li>Photography - "Urban Symphony"</li>
+        </ul>
+      </div>
+
+      <!-- Additional content goes here -->
+    </div>
+  </div>
+</body>
+</html>
+
